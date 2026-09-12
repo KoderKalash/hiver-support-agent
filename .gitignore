@@ -14,8 +14,6 @@ __pycache__/
 data/raw/
 data/processed/
 
-/results
-
 # Environment variables
 .env
 
@@ -159,5 +157,26 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Large raw/processed datasets
+data/raw/
+data/processed/
+
+# Local environment
+.venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+results/candidate_conversations/
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Python
