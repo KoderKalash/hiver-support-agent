@@ -1,0 +1,91 @@
+{
+  "intent": {
+    "accuracy": 0.555,
+    "macro_f1": 0.0714,
+    "per_intent": {
+      "account_auth": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "apps_services": {
+        "precision": 0.5549738219895288,
+        "recall": 1.0,
+        "f1-score": 0.7138047138047138,
+        "support": 106.0
+      },
+      "battery_charging": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 15.0
+      },
+      "communication": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "connectivity": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "hardware_accessories": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 10.0
+      },
+      "keyboard_input": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 15.0
+      },
+      "media_data": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 7.0
+      },
+      "payments_purchases": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "performance_stability": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 18.0
+      },
+      "accuracy": 0.5549738219895288,
+      "macro avg": {
+        "precision": 0.05549738219895288,
+        "recall": 0.1,
+        "f1-score": 0.07138047138047138,
+        "support": 191.0
+      },
+      "weighted avg": {
+        "precision": 0.30799594309366524,
+        "recall": 0.5549738219895288,
+        "f1-score": 0.3961429301743437,
+        "support": 191.0
+      }
+    }
+  },
+  "escalation": {
+    "auto_handle_coverage": 0.0,
+    "correct_auto_handle_rate": null,
+    "false_auto_handle_rate": null,
+    "escalation_rate": 1.0
+  },
+  "retrieval": {
+    "evidence_available_rate": 0.0,
+    "mean_top1_similarity": null
+  }
+}

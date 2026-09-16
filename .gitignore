@@ -13,6 +13,7 @@ __pycache__/
 # Dataset
 data/raw/
 data/processed/
+data/artifacts/
 
 # Environment variables
 .env

@@ -1,0 +1,9 @@
+# Failure analysis (provisional)
+
+Examples below are actual held-out dataset rows in `results/final_system_predictions.jsonl`. “Expected” means the provisional silver label, so these are diagnostic examples—not validated test errors.
+
+1. **Noisy mixed wording.** Tweet `2555460`: “This lagging while txting is trash.” Silver expected `performance_stability`; system predicted `apps_services` (0.181) and escalated. The tweet combines typing and lag. Hypothesis: sparse lexical features overweight generic “txting.” Improvement: human labels plus character/subword features or an LLM classifier.
+2. **Taxonomy boundary.** Tweet `639764` asks about keyboard media controls and iTunes. Silver expected `apps_services`; system chose `keyboard_input` (0.160) and escalated. Hypothesis: “keyboard” dominates the classifier. Improvement: add contrastive boundary examples.
+3. **Under-specific short hardware report.** Tweet `2813640` reports an iPhone X green line. Silver expected `hardware_accessories`; system chose `apps_services` (0.161) and escalated, despite highly relevant retrieved evidence (0.325). Hypothesis: classifier is weaker than retrieval on rare classes. Improvement: incorporate retrieved-neighbour intent voting.
+4. **Content-loss ambiguity.** Tweet `2052928` says an album disappeared “off my account.” The system escalated on low confidence and retrieved a photo-loss response. Hypothesis: generic phrase overlap (“out of nowhere”) hurts evidence specificity. Improvement: require entity overlap or use a metadata-aware retriever.
+5. **Low-confidence but relevant retrieval.** Tweet `1657760` describes a corrupted typed character. Intent and retrieval matched, but the 0.322 intent confidence forced escalation. Hypothesis: threshold is intentionally too conservative on a silver-trained model. Improvement: recalibrate against completed golden labels and measure false-auto-handle rate.

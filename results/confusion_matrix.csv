@@ -1,0 +1,11 @@
+actual/predicted,account_auth,apps_services,battery_charging,communication,connectivity,hardware_accessories,keyboard_input,media_data,payments_purchases,performance_stability
+account_auth,0,0,0,0,0,0,0,0,0,1
+apps_services,0,78,3,3,0,4,9,1,0,8
+battery_charging,0,1,12,1,0,0,0,0,0,1
+communication,0,6,0,6,0,1,0,0,0,0
+connectivity,0,0,0,0,2,0,1,0,0,0
+hardware_accessories,0,4,0,0,0,3,0,0,0,3
+keyboard_input,0,3,0,0,0,0,12,0,0,0
+media_data,0,3,0,0,1,1,1,1,0,0
+payments_purchases,0,2,0,0,0,1,0,0,0,0
+performance_stability,0,4,1,0,1,1,0,0,0,11

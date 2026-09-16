@@ -1,0 +1,91 @@
+{
+  "intent": {
+    "accuracy": 0.6545,
+    "macro_f1": 0.4284,
+    "per_intent": {
+      "account_auth": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "apps_services": {
+        "precision": 0.7722772277227723,
+        "recall": 0.7358490566037735,
+        "f1-score": 0.7536231884057971,
+        "support": 106.0
+      },
+      "battery_charging": {
+        "precision": 0.75,
+        "recall": 0.8,
+        "f1-score": 0.7741935483870968,
+        "support": 15.0
+      },
+      "communication": {
+        "precision": 0.6,
+        "recall": 0.46153846153846156,
+        "f1-score": 0.5217391304347826,
+        "support": 13.0
+      },
+      "connectivity": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.5714285714285714,
+        "support": 3.0
+      },
+      "hardware_accessories": {
+        "precision": 0.2727272727272727,
+        "recall": 0.3,
+        "f1-score": 0.2857142857142857,
+        "support": 10.0
+      },
+      "keyboard_input": {
+        "precision": 0.5217391304347826,
+        "recall": 0.8,
+        "f1-score": 0.631578947368421,
+        "support": 15.0
+      },
+      "media_data": {
+        "precision": 0.5,
+        "recall": 0.14285714285714285,
+        "f1-score": 0.2222222222222222,
+        "support": 7.0
+      },
+      "payments_purchases": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "performance_stability": {
+        "precision": 0.4583333333333333,
+        "recall": 0.6111111111111112,
+        "f1-score": 0.5238095238095238,
+        "support": 18.0
+      },
+      "accuracy": 0.6544502617801047,
+      "macro avg": {
+        "precision": 0.43750769642181614,
+        "recall": 0.4518022438777155,
+        "f1-score": 0.42843094177707003,
+        "support": 191.0
+      },
+      "weighted avg": {
+        "precision": 0.6529567844105149,
+        "recall": 0.6544502617801047,
+        "f1-score": 0.6455958620866753,
+        "support": 191.0
+      }
+    }
+  },
+  "escalation": {
+    "auto_handle_coverage": 1.0,
+    "correct_auto_handle_rate": 0.9424,
+    "false_auto_handle_rate": 0.0576,
+    "escalation_rate": 0.0
+  },
+  "retrieval": {
+    "evidence_available_rate": 1.0,
+    "mean_top1_similarity": 0.3039
+  }
+}
